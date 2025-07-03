@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 public class StoredIntService {
   private static final String FILE_PATH = "/tmp/stored-int.txt"; // Disque temporaire Lambda
 
-  public ResponseEntity<Integer> getStoredInt() {
+  public ResponseEntity<Integer> storedInt() {
     try {
       Path path = Paths.get(FILE_PATH);
       int number;

@@ -13,6 +13,6 @@ public class StoredIntController {
 
   @GetMapping("/stored-int")
   public ResponseEntity<Integer> getStoredInt() {
-    return storedIntService.getStoredInt();
+    return storedIntService.storedInt();
   }
 }
