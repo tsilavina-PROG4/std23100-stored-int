@@ -6,7 +6,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Random;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StoredIntService {
   private static final String FILE_PATH = "/tmp/stored-int.txt"; // Disque temporaire Lambda
 
